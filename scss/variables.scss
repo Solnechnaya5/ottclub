@@ -1,0 +1,45 @@
+// media
+$desktop: 1920px;
+$laptop: 1440px;
+$tablet: 990px;
+$smartL: 768px;
+$smartM: 375px;
+$smartS: 320px;
+// font family
+$ff-Inter: 'Inter', sans-serif;
+
+// font size
+$f-red-big:90px;
+$h1: 56px;
+$h2: 52px;
+$h5: 24px;
+$par1: 26px;
+$par2:20px;
+
+// font weight
+$fw600: 600;
+$fw500: 500;
+$fw400: 400;
+
+// line-height
+$lh100: 100%;
+$lh120:120%;
+$lh140:140%;
+$lh150:150%;
+
+// colors
+$main_bg:#FFF;
+$white: #131212;
+$red:#FF1F1F;
+
+// bg colors channels
+$gr_red: var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%));
+$gr_blue:var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%));
+$gr_green:var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%));
+$gr_violet: var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%));
+$gr_yellow:var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%));
+
+// borders
+$br-white: 2px solid #FFF; 
+
+// padding

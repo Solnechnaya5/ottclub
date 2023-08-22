@@ -1,0 +1,87 @@
+%flex-r-ac{
+display: flex;
+align-items: center;
+}
+%flex-r-jc{
+display: flex;
+justify-content: center;
+}
+%flex-r-cc{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%flex-col{
+display: flex;
+flex-direction: column;
+}
+%flex-col-cc{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+@mixin title1{
+color: $white;
+font-family: $ff-Inter;
+font-size: $h1;
+font-style: normal;
+font-weight: $fw600;
+line-height: $lh120;
+}
+@mixin title2{
+color: $white;
+font-family: $ff-Inter;
+font-size: $h2;
+font-style: normal;
+font-weight: $fw500;
+line-height: $lh140;
+}
+@mixin title5{
+color: $white;
+font-family: $ff-Inter;
+font-size: $h5;
+font-style: normal;
+font-weight: $fw600;
+line-height: $lh100;
+}
+@mixin paragr1{
+color: $white;
+font-family: $ff-Inter;
+font-size: $par1;
+font-style: normal;
+font-weight: $fw400;
+line-height: $lh140;
+}
+@mixin paragr2{
+color: $white;
+font-family: $ff-Inter;
+font-size: $par2;
+font-style: normal;
+font-weight: $fw400;
+line-height: $lh150;
+}
+@mixin img-position{
+width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 100px;
+}  
+@mixin gradient-position{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+@mixin btn-transparent{
+    @extend %flex-r-cc;
+    border: $br-white;
+    border-radius: 5px;
+}
+@mixin btn-red{
+    @extend %flex-r-cc;
+    background-color: $red;
+    border-radius: 5px;
+}
+@mixin change-width(){}

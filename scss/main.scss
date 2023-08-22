@@ -1,0 +1,255 @@
+@import './variables.scss';
+@import './template.scss';
+
+.page-wrapper{ 
+    width: 1920px;
+    height: auto;
+    overflow: hidden;
+    background-color: $main_bg;
+}
+.first-background {
+    width: inherit;
+    height: 1198px;
+    position: relative;
+     img.gradient{
+       @include gradient-position;
+    }
+     img.background-img{
+width: inherit;
+height: 772px;
+position: absolute;
+bottom: 0;
+z-index: 50;
+    }
+
+}
+.first-background__content {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 100;
+}
+.part {
+}
+.site-header {
+    width: inherit;
+    height: 830px;
+}
+.site-header__top {
+    @extend %flex-r-ac;
+    justify-content: space-between;
+    width: 1462px;
+    height: 96px;
+    padding-top: 30px;
+margin:0px auto 30px;
+}
+.site-header__logo, .site-header__logo a{
+    width: 96px;
+        height: 86px;
+        display: block;
+        position: relative;
+        img{
+            @include img-position;
+        }
+    }
+
+.site-header__right-menu {
+    @extend %flex-r-ac;
+}
+.site-header__socials {
+    @extend %flex-r-ac;
+    margin-right: 48px;
+    a{
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        &:first-child{
+            margin-right: 16px;
+        }
+        img{
+            @include img-position;
+        }
+    }
+}
+.site-header__btns {
+    @extend %flex-r-ac;
+    a{
+        @include paragr2;
+        font-weight: $fw600;
+        &:first-child{
+            margin-right: 32px;
+        }
+        &:last-child{
+            @include btn-transparent;
+            width: 127px;
+            height: 60px;
+        }
+    }
+}
+.site-header__main {
+    width: inherit;
+    height: 674px;
+    @extend %flex-r-ac;
+}
+.site-header__main-content {
+    width: 715px;
+    height: auto;
+    margin: 0 32px 0 229px;
+    h1{
+        @include title1;
+        width: inherit;
+        margin-bottom: 50px;
+    }
+    p{
+        @include paragr1;
+        margin-bottom: 70px; 
+        font-weight: $fw400;
+    }
+    button{
+        width: 530px;
+        height: 84px;
+        @include paragr1;
+        @include btn-red;
+        font-weight: $fw600;
+    }
+}
+.site-header__main-img {
+    width: 974.002px;
+height: 561px; 
+position: relative;
+img{
+@include img-position;
+}
+}
+.advantages {
+   
+    width: inherit;
+    height: 368px;
+    padding:60px 0 80px;
+}
+.advantages-container {
+    width: 1462px;
+height: 228px;
+@extend %flex-r-ac;
+margin: 0 auto;
+
+}
+.advantages-card {
+    @extend %flex-col;
+    width: 342px;
+    height: 228px;
+    img{
+        width: 96px;
+        height: 96px;
+        margin-bottom: 32px;
+    }
+    h5{
+        @include title5;
+        margin-bottom: 16px;
+    }
+    p{
+        @include  paragr2;
+    }
+}
+.second-background {
+    width: inherit;
+    height: 2477px;
+    position: relative;
+    img.gradient{
+        @include gradient-position;
+        top: 384px;
+     }
+      img.background-img{
+ width: 654px;
+ height: 1220px;
+ position: absolute;
+top: 711px;
+ z-index: 50;
+     }
+}
+.second-background__content { 
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 100;
+}
+.tariff {
+    width: inherit;
+    height: 770px;
+    padding:60px 0 80px;
+}
+.tariff-container {
+    width: 1160px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    img{
+        
+    }
+}
+.tariff-container__logo {
+}
+.tariff-container__content {
+    display: flex;
+}
+.tariff-price {
+}
+.tariff-advantages {
+}
+.tariff-form_subscribe {
+}
+.channels {
+}
+.channels-top {
+}
+.channels-list {
+}
+.channels-list__filter {
+}
+.channels-list__items {
+}
+.channels-list__items-container {
+}
+.channels-list__item {
+}
+.show-channels {
+}
+.devices {
+}
+.devices-top {
+}
+.devices-top__left {
+}
+.devices-top__right {
+}
+.devices-logos {
+}
+.third-background {
+}
+.third-background__content {
+}
+.faq {
+}
+.faq-items {
+}
+.faq-items__row {
+}
+.faq-item {
+}
+.site-footer {
+}
+.footer-top {
+}
+.footer-top__left {
+}
+.footer-links {
+}
+.footer-top__right {
+}
+.footer-bottom {
+}
+.footer_payment-methods {
+}
+.footer-copyright {
+}
