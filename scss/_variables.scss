@@ -1,10 +1,3 @@
-// media
-$desktop: 1920px;
-$laptop: 1440px;
-$tablet: 990px;
-$smartL: 768px;
-$smartM: 375px;
-$smartS: 320px;
 // font family
 $ff-Inter: 'Inter', sans-serif;
 
@@ -15,6 +8,15 @@ $h2: 52px;
 $h5: 24px;
 $par1: 26px;
 $par2:20px;
+$par3:22px;
+
+$f-red-big-pc:90;
+$h1-pc: 56;
+$h2-pc: 52;
+$h5-pc: 24;
+$par1-pc: 26;
+$par2-pc:20;
+$par3-pc:22;
 
 // font weight
 $fw600: 600;
@@ -28,9 +30,12 @@ $lh140:140%;
 $lh150:150%;
 
 // colors
-$main_bg:#FFF;
-$white: #131212;
+$main_bg: #131212;
+$white: #FFF;
 $red:#FF1F1F;
+$red-hover:#d41616;
+$white-hover:rgba(255,255, 255, 0.50);
+$plhold:var(--text-notactive, rgba(60, 60, 67, 0.60));
 
 // bg colors channels
 $gr_red: var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%));
@@ -38,8 +43,39 @@ $gr_blue:var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD
 $gr_green:var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%));
 $gr_violet: var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%));
 $gr_yellow:var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%));
-
+$bg-transp: transparent;
 // borders
-$br-white: 2px solid #FFF; 
+$br-white: 1px solid #FFF; 
+$br-input: 1px solid #D0D0D1;
+$opacity: 0.8;
 
-// padding
+
+// font media 1440
+$f-red-big-lap:67px;
+$h1_lap:42px;
+$h2_lap: 40px;
+$h5_lap: 18px;
+$par1_lap: 20px;
+$par2_lap:16px;
+$links_f_lap:14px;
+
+// font media 990
+$h1_tab:38px;
+$h2_tab: 36px;
+$h5_tab: 16px;
+$par1_tab: 18px;
+
+// font media smartL
+$h1_l:32px;
+$h2_l: 30px;
+$par1_l: 17px;
+
+
+// font media smartM
+$h1_m:28px;
+$h2_m: 28px;
+$par1_m: 16px;
+// font media smartS
+$h1_s:24px;
+$h2_s: 24px;
+$par1_s: 15px;

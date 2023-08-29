@@ -1,0 +1,2376 @@
+@import "./_variables.scss";
+@import "./_template.scss";
+@import "./_breakpoints.scss";
+
+.page-wrapper {
+    @include desktop-down {
+        width: calc(320px + (1920 - 320) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+.first-background {
+    @include laptop {
+        height: 901px;
+    }
+
+    @include tablet {
+        height: 774px;
+    }
+
+    @include smartL {
+        height: 626px;
+    }
+
+    @include smartM {
+        height: 581px;
+    }
+
+    @include smartS {
+        height: 501px;
+    }
+
+    img.background-img {
+        @include laptop {
+            height: 579px;
+        }
+
+        @include tablet {
+            height: 477px;
+        }
+
+        @include smartL {
+            height: 371px;
+        }
+
+        @include smartM {
+            height: 327px;
+            object-fit: cover;
+        }
+
+        @include smartS {
+            height: 279px;
+            object-fit: cover;
+        }
+    }
+}
+
+.site-header {
+    @include laptop {
+        height: 623px;
+    }
+
+    @include tablet {
+        height: 520px;
+    }
+
+    @include smartL {
+        height: 453px;
+    }
+
+    @include smartM {
+        height: 581px;
+    }
+
+    @include smartS {
+        height: 501px;
+    }
+}
+
+.site-header__top {
+    @include laptop {
+        width: 1096px;
+        height: 72px;
+        padding-top: 23px;
+        margin: 0 172px 23px;
+    }
+
+    @include tablet {
+        width: 894px;
+        height: 118px;
+        padding-top: 23px;
+        margin: 0 48px 23px;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 110px;
+        padding-top: 23px;
+        margin: 0 48px 23px;
+    }
+
+    @include smartM {
+        width: 343px;
+        height: 56px;
+        padding-top: 44px;
+        margin: 0 8px 16px;
+    }
+
+    @include smartS {
+        width: 288px;
+        height: 56px;
+        padding-top: 16px;
+        margin: 0 16px 8px;
+    }
+}
+
+.site-header__logo,
+.site-header__logo a {
+    @include laptop {
+        width: 72px;
+        height: 64px;
+    }
+
+    @include tablet {
+        width: 72px;
+        height: 64px;
+    }
+
+    @include smartL {
+        width: 64px;
+        height: 57px;
+    }
+
+    @include smartM {
+        width: 56px;
+        height: 51px;
+    }
+
+    @include smartS {
+        width: 56px;
+        height: 51px;
+    }
+}
+
+.site-header__socials {
+    @include smartL-down {
+        display: none;
+    }
+}
+
+.site-header__btns {
+    a {
+        @include laptop {
+            font-size: $par2_lap;
+        }
+
+        @include smartL {
+            font-size: $par2_lap;
+        }
+
+        @include smartM {}
+
+        @include smartS {}
+
+        &:first-child {
+            @include laptop-down {
+                margin-right: 24px;
+            }
+
+            @include smartL-down {
+                display: none;
+            }
+
+        }
+
+        &:last-child {
+            @include laptop {
+                width: 96px;
+                height: 44px;
+            }
+
+            @include laptop-down {
+                width: 96px;
+                height: 44px;
+            }
+
+            @include smartM {
+                width: 96px;
+                height: 40px;
+            }
+
+            @include smartS {
+                width: 96px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.site-header__main {
+    @include laptop {
+        height: 505px;
+    }
+
+    @include tablet {
+        height: 402px;
+    }
+
+    @include smartL {
+        height: 333px;
+    }
+
+    @include smartM {
+        height: 581px;
+    }
+
+    @include smartS {
+        height: 501px;
+    }
+}
+
+.site-header__main-content {
+
+    @include laptop {
+        width: 532px;
+        margin-left: 172px;
+    }
+
+    @include tablet {
+        width: 465px;
+        margin-left: 48px;
+    }
+
+    @include smartL {
+        width: 430px;
+        margin-left: 40px;
+    }
+
+    @include smartM {
+        height: 581px;
+        margin-left: 16px;
+    }
+
+    @include smartS {
+        height: 501px;
+        margin-left: 16px;
+    }
+
+    h1 {
+        @include laptop {
+            font-size: $h1_lap;
+            margin-bottom: 32px;
+        }
+
+        @include tablet {
+            font-size: $h1_tab;
+            margin: 48px 0 32px;
+        }
+
+        @include smartL {
+
+            font-size: $h1_l;
+            margin: 48px 0 24px;
+        }
+
+        @include smartM {
+            width: 343px;
+            font-size: $h1_m;
+            text-align: center;
+            margin: 24px 0 20px;
+        }
+
+        @include smartS {
+            width: 288px;
+            font-size: $h1_s;
+            text-align: center;
+            margin: 16px 0 12px;
+        }
+    }
+
+    p {
+        @include laptop {
+            font-size: $par1_l;
+            margin-bottom: 56px;
+        }
+
+        @include tablet {
+            font-size: $par1_tab;
+            margin-bottom: 48px;
+        }
+
+        @include smartL {
+            font-size: $par1_l;
+            margin-bottom: 50px;
+        }
+
+        @include smartM {
+            font-size: $par1_m;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+    }
+
+    a {
+        @include laptop {
+            font-size: $par1_l;
+            width: 411px;
+            height: 64px;
+        }
+
+        @include tablet {
+            font-size: $par1_tab;
+            width: 368px;
+            height: 67px;
+        }
+
+        @include smartL {
+            font-size: $par1_l;
+            width: 343px;
+            height: 56px;
+        }
+
+        @include smartM {
+            font-size: $par1_m;
+            width: 343px;
+            height: 56px;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+            width: 288px;
+            height: 49px;
+        }
+    }
+}
+
+.site-header__main-img {
+
+    @include laptop {}
+
+    @include tablet {
+        width: 596px;
+        height: 400px;
+        position: relative;
+
+    }
+
+    img {
+        @include tablet {
+            width: inherit;
+        }
+    }
+
+    @include smartL {
+        width: 523px;
+        height: 301px;
+    }
+
+    @include smartM-down {
+        display: none;
+    }
+}
+
+
+.site-header__main-img__mob {
+    img {
+        @include img-position;
+    }
+
+    @include smartM {
+        display: block;
+        width: 300px;
+        height: 173px;
+        position: relative;
+    }
+
+    @include smartS {
+        display: block;
+        width: 283px;
+        height: 163px;
+        position: relative;
+    }
+
+}
+
+.advantages {
+    @include laptop {
+        height: 278px;
+        padding-top: 48px;
+        padding-bottom: 56px;
+    }
+
+    @include tablet {
+        height: 254px;
+        padding: 32px 0 32;
+    }
+
+    @include smartL {
+        height: 108px;
+        padding: 24px 0 40px;
+    }
+
+    @include smartM {
+        display: none;
+    }
+
+    @include smartS {
+        display: none;
+    }
+}
+
+.advantages-container {
+    @include laptop {
+        width: 1096px;
+        height: 174px;
+        margin: 0 172px;
+    }
+
+    @include tablet {
+        width: 894px;
+        height: 190px;
+        margin: 0 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 108px;
+        margin: 0 40px;
+    }
+}
+
+.advantages-card {
+    @include laptop {
+        width: 250px;
+        height: 174px;
+    }
+
+    @include tablet {
+        width: 205px;
+        height: 190px;
+    }
+
+    @include smartL {
+        width: 154px;
+        height: 108px;
+        align-items: center;
+    }
+
+    img {
+        @include laptop {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 24px;
+        }
+
+        @include tablet {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+
+        @include smartL {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 12px;
+        }
+    }
+
+    h5 {
+
+        @include laptop {
+            font-size: $h5_lap;
+            margin-bottom: 16px;
+        }
+
+        @include tablet-down {
+            font-size: $h5_tab;
+            margin-bottom: 16px;
+        }
+
+        @include smartL {
+            text-align: center;
+        }
+    }
+
+    p {
+        @include desktop-down {
+            margin-bottom: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+        }
+
+        @include laptop {
+            font-size: $par2_lap;
+        }
+
+        @include tablet {
+            font-size: $par2_lap;
+        }
+
+        @include smartL {
+            display: none;
+        }
+    }
+}
+
+.second-background {
+    @include laptop {
+        height: 1862px;
+    }
+
+    @include tablet {
+        height: 1805px;
+    }
+
+    @include smartL {
+        height: 1563px;
+    }
+
+    @include smartM {
+        height: 1833px;
+    }
+
+    @include smartS {
+        height: 1744px;
+    }
+
+    img.gradient {
+        @include laptop {}
+
+        @include tablet {}
+
+        @include smartL {}
+
+        @include smartM {}
+
+        @include smartS {}
+    }
+
+    img.background-img {
+        @include laptop {
+            width: 495px;
+            height: 924px;
+            top: 530px;
+        }
+
+        @include tablet {
+            width: 415px;
+            height: 774px;
+        }
+
+        @include smartL {
+            width: 290px;
+            height: 541px;
+        }
+
+        @include smartM {
+            width: 222px;
+            height: 413px;
+        }
+
+        @include smartS {
+            width: 189px;
+            height: 353px;
+        }
+    }
+}
+
+.tariff {
+    @include laptop {
+        height: 472px;
+        margin: 48px 0 56px;
+
+    }
+
+    @include tablet {
+        width: 800px;
+        height: 520px;
+        margin: 48px 95px 56px;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 428px;
+        margin: 34px 40px 50px;
+    }
+
+    @include smartM {
+        width: 343px;
+        height: 643px;
+        margin: 16px 16px 24px;
+    }
+
+    @include smartS {
+        width: 288px;
+        height: 601px;
+        margin: 20px 16px 33px;
+    }
+}
+
+.tariff-container {
+    @include laptop {
+        width: 862px;
+        height: 425px;
+        top: 48px;
+        margin: 0;
+    }
+
+    @include tablet {
+        width: 800px;
+        height: 472px;
+        top: 48px;
+        margin: 0;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 390px;
+        top: 48px;
+        margin: 0;
+    }
+
+    @include smartM {
+        width: 343px;
+        height: 643px;
+    }
+
+    @include smartS {
+        width: 288px;
+        height: 601px;
+    }
+}
+
+.tariff-description__circle {
+    @include laptop {
+        width: 110px;
+        height: 110px;
+        top: -48px;
+        left: 380px;
+    }
+
+    @include tablet {
+        width: 110px;
+        height: 110px;
+        top: -48px;
+        left: 380px;
+    }
+
+    @include smartL {
+        width: 85px;
+        height: 85px;
+        top: -38px;
+        left: 300px;
+    }
+
+    @include smartM {
+        width: 80px;
+        height: 80px;
+        top: -35px;
+        left: 140px;
+    }
+
+    @include smartS {
+        width: 80px;
+        height: 80px;
+        top: -35px;
+        left: 110px;
+    }
+
+    img {
+        @include laptop {
+            width: 54px;
+            height: 64px;
+            left: 26px;
+        }
+
+        @include tablet {
+            width: 54px;
+            height: 64px;
+            left: 26px;
+        }
+
+        @include smartL {
+            width: 46px;
+            height: 58px;
+            left: 16px;
+        }
+
+        @include smartM {
+            width: 44px;
+            height: 55px;
+            left: 16px;
+            top: 16px;
+        }
+
+        @include smartS {
+            width: 40px;
+            height: 53px;
+            left: 16px;
+            top: 16px;
+        }
+    }
+}
+
+.mask {
+    @include laptop {
+        top: 45px;
+    }
+
+    @include tablet {
+        top: 45px;
+    }
+
+    @include smartL {
+        height: 50px;
+        top: 35px;
+    }
+
+    @include smartM {
+        height: 50px;
+        top: 32px;
+        left: -20px;
+    }
+
+    @include smartS {
+        height: 50px;
+        top: 32px;
+        left: -20px;
+    }
+}
+
+.tariff-container__content {
+    @include laptop {
+        width: 530px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    @include tablet {
+        width: 522px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    @include smartL {
+        width: 513px;
+        height: 192px;
+        margin-bottom: 40px;
+    }
+
+    @include smartM {
+        width: 250px;
+        height: 351px;
+        flex-direction: column;
+    }
+
+    @include smartS {
+        width: 237px;
+        height: 333px;
+        flex-direction: column;
+    }
+}
+
+.tariff-price {
+    @include laptop-down {
+        width: 200px;
+        margin-right: 81px;
+    }
+
+    @include smartM-down {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    @include smartM {
+        margin-bottom: 32px;
+    }
+
+    @include smartS {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        @include laptop {
+            font-size: $par1_lap;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        @include tablet {
+            font-size: $par1_tab;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        @include smartL {
+            font-size: $par1_s;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        @include smartM {
+            font-size: $par1_m;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        span {
+            @include laptop {
+                font-size: $f-red-big-lap;
+            }
+        }
+    }
+
+    p {
+        @include laptop {
+            font-size: $par1_lap;
+        }
+
+        @include tablet {
+            font-size: $par1_tab;
+        }
+
+        @include smartL {
+            font-size: $par1_l;
+        }
+
+        @include smartM {
+            font-size: $par1_m;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+        }
+    }
+}
+
+.tariff-advantages {
+    @include laptop {
+        width: 249px;
+    }
+
+    @include tablet {
+        width: 233px;
+    }
+
+    @include smartL {
+        width: 196px;
+    }
+
+    @include smartM {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    @include smartS {
+        width: 237px;
+        margin-bottom: 24px;
+    }
+
+    li {
+        @include laptop {
+            font-size: $par1_lap;
+            margin-bottom: 20px;
+        }
+
+        @include tablet-down {
+            font-size: $par1_tab;
+        }
+
+        @include smartL {
+            font-size: $par1_l;
+            margin-bottom: 16px;
+        }
+
+        @include smartM {
+            font-size: $par1_s;
+            height: 16px;
+            margin-bottom: 18px;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+            height: 16px;
+            margin-bottom: 16px;
+        }
+
+
+        img {
+            @include laptop {
+                width: 24px;
+                height: 24px;
+            }
+
+            @include laptop-down {
+                width: 24px;
+                height: 24px;
+            }
+
+        }
+    }
+}
+
+.tariff-form_subscribe {
+    @include laptop {
+        width: 570px;
+    }
+
+    @include tablet {
+        width: 551px;
+    }
+
+    @include smartL {
+        width: 526px;
+    }
+
+    @include smartM {
+        flex-direction: column;
+        width: 295px;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        width: 256px;
+    }
+}
+
+.tariff-form_subscribe-input {
+
+    @include smartM {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    input {
+        @include laptop {
+            width: 300px;
+            height: 56px;
+            padding: 16px;
+        }
+
+        @include laptop-down {
+            width: 300px;
+            height: 56px;
+            padding: 16px;
+        }
+
+        @include smartM {
+            width: 295px;
+            height: 53px;
+            padding: 15px 16px;
+            border-radius: 5px;
+        }
+
+        @include smartS {
+            width: 256px;
+            height: 53px;
+            padding: 15px 16px;
+            border-radius: 5px;
+        }
+    }
+
+    button {
+        @include laptop {
+            font-size: $par1_lap;
+            width: 270px;
+            height: 56px;
+        }
+
+        @include laptop-down {
+            font-size: $par1_lap;
+            width: 270px;
+            height: 56px;
+        }
+
+        @include smartM {
+            width: 295px;
+            height: 53px;
+        }
+
+        @include smartS {
+            width: 256px;
+            height: 53px;
+        }
+    }
+}
+
+#invalid-email {
+    @include laptop {
+        font-size: $par1_l
+    }
+
+    @include tablet {
+        font-size: $par1_tab;
+    }
+
+    @include smartL {
+        font-size: $par1_l;
+    }
+
+    @include smartM {
+        font-size: $par1_m;
+    }
+
+    @include smartS {
+        font-size: $par1_s;
+    }
+}
+
+.channels {
+    @include laptop {
+        height: 678px;
+    }
+
+    @include tablet {
+        height: 635px;
+    }
+
+    @include smartL {
+        height: 611px;
+    }
+
+    @include smartM {
+        height: 498px;
+    }
+
+    @include smartS {
+        height: 459px;
+    }
+}
+
+.channels.higher {
+    @include laptop {
+        height: auto;
+    }
+
+    @include laptop-down {
+        height: auto;
+    }
+}
+
+.channels-top {
+    @include laptop {
+        padding-top: 56px;
+        margin-left: 186px;
+    }
+
+    @include tablet {
+        padding-top: 67px;
+        margin-left: 48px;
+    }
+
+    @include smartL {
+        padding-top: 67px;
+        margin-left: 40px;
+    }
+
+    @include smartM {
+        padding-top: 50px;
+        margin: 0 0 0 16px;
+    }
+
+    @include smartS {
+        padding-top: 50px;
+        margin: 0 0 0 16px;
+    }
+
+    h2 {
+        @include laptop {
+            font-size: $h2_lap;
+            height: 56px;
+            margin-bottom: 16px;
+        }
+
+        @include tablet {
+            font-size: $h2_tab;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        @include smartL {
+            width: 343px;
+            font-size: $h2_l;
+            height: 42px;
+            margin-bottom: 16px;
+        }
+
+        @include smartM {
+            width: 288px;
+            font-size: $h2_m;
+            text-align: center;
+            height: 39px;
+            margin-bottom: 16px;
+        }
+
+        @include smartS {
+            font-size: $h2_s;
+            height: 34px;
+            margin-bottom: 8px;
+        }
+    }
+
+    img {
+        @include laptop {
+            left: 244px;
+            bottom: 24px;
+        }
+
+        @include tablet {
+            left: 226px;
+            bottom: 26px;
+        }
+
+        @include smartL {
+            left: 189px;
+            bottom: 31px;
+        }
+
+        @include smartM {
+            width: 40px;
+            height: 40px;
+            left: 258px;
+            bottom: 21px;
+        }
+
+        @include smartS {
+            width: 40px;
+            height: 40px;
+            left: 215px;
+            bottom: 18px;
+        }
+    }
+
+    p {
+        @include laptop-down {
+            font-size: $par2_lap;
+        }
+
+        @include laptop {
+            font-size: $par2_lap;
+            width: 626px;
+        }
+
+        @include tablet {
+            width: 626px;
+        }
+
+        @include smartL {
+            width: 510px;
+        }
+
+        @include smartM {
+            width: 343px;
+            text-align: center;
+        }
+
+        @include smartS {
+            width: 288px;
+            text-align: center;
+        }
+    }
+}
+
+.channels-list {
+    @include laptop {
+        width: 1096px;
+        margin: 34px 0 0 186px;
+    }
+
+    @include tablet {
+        width: 893px;
+        margin: 34px 0 0 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        margin: 33px 0 0 40px;
+    }
+
+    @include smartM {
+        width: 360px;
+        margin: 32px 0 0 0;
+    }
+
+    @include smartS {
+        width: 295px;
+        margin: 24px 0 0 0;
+    }
+}
+
+.channels-list__filter {
+    @include laptop {
+        width: 1096px;
+        margin-bottom: 40px;
+
+    }
+
+    @include tablet {
+        width: 893px;
+        margin-bottom: 30px;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.801) rgba(255, 255, 255, 0.205);
+        scroll-padding-top: 15px;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.801);
+            border-radius: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.205);
+        }
+    }
+
+    @include tablet-down {
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.801) rgba(255, 255, 255, 0.205);
+        scroll-padding-top: 15px;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.801);
+            border-radius: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.205);
+        }
+    }
+
+    @include smartL {
+        width: 688px;
+        margin-bottom: 30px;
+    }
+
+    @include smartM {
+        width: 360px;
+        margin: 0 0 14px 16px;
+    }
+
+    @include smartS {
+        width: 295px;
+        margin: 0 0 14px 16px;
+    }
+
+    button {
+
+        @include laptop {
+            height: 48px;
+            font-size: $par2_lap;
+            padding: 12px 18px;
+            margin-right: 18px;
+
+            &:last-child {
+                margin-right: 18px;
+            }
+        }
+
+        @include laptop-down {
+            height: 48px;
+            font-size: $par2_lap;
+            padding: 12px 18px;
+        }
+
+        @include tablet {
+            margin: 0 24px 15px 0;
+        }
+
+        @include smartL {
+            margin: 0 24px 15px 0;
+        }
+
+        @include smartM {
+            height: 40px;
+            margin: 0 16px 15px 0;
+        }
+
+        @include smartS {
+            height: 39px;
+            margin: 0 8px 15px 0;
+        }
+    }
+}
+
+.channels-list__items {
+    @include laptop {
+        width: 1096px;
+        height: 276px;
+    }
+
+    @include tablet {
+        width: 893px;
+        height: 248px;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 242px;
+    }
+
+    @include smartM {
+        width: 360px;
+        height: 156px;
+        margin-left: 7px;
+    }
+
+    @include smartS {
+        width: 295px;
+        height: 131px;
+        margin-left: 7px;
+    }
+}
+
+.channels-list__items.show-more {
+
+    @include laptop {
+        height: 450px;
+    }
+
+    @include tablet {
+        height: 450px;
+    }
+
+    @include smartL {
+        height: 306px;
+    }
+
+    @include smartM {
+        height: 250px;
+    }
+
+    @include smartS {
+        height: 200px;
+    }
+}
+
+.channels-list__items-container {
+
+    @include laptop {
+        height: 122px;
+    }
+
+    @include tablet {
+        height: 108px;
+    }
+
+    @include smartL {
+        height: 105px;
+    }
+
+    @include smartM {
+        height: 70px;
+    }
+
+    @include smartS {
+        height: 57px;
+    }
+}
+
+.channels-list__item {
+
+    @include laptop {
+        width: 180px;
+        height: 122px;
+        margin: 0 18px 32px;
+    }
+
+    @include tablet {
+        width: 158px;
+        height: 108px;
+        margin: 0 8px 32px;
+    }
+
+    @include smartL {
+        width: 154px;
+        height: 105px;
+        margin: 0 8px 32px;
+    }
+
+    @include smartM {
+        width: 102px;
+        height: 70px;
+        margin: 0 7px 16px;
+    }
+
+    @include smartS {
+        width: 84px;
+        height: 57px;
+        margin: 0 7px 16px;
+    }
+
+    img {
+        @include laptop {
+            width: 160px;
+            height: 90px;
+        }
+
+        @include tablet {
+            width: 117px;
+            height: 66px;
+        }
+
+        @include smartL {
+            width: 112px;
+            height: 63px;
+        }
+
+        @include smartM {
+            width: 75px;
+            height: 42px;
+        }
+
+        @include smartS {
+            width: 62px;
+            height: 35px;
+        }
+    }
+}
+
+.show-channels {
+
+    @include laptop {
+        width: 1096px;
+    }
+
+    @include tablet {
+        width: 893px;
+    }
+
+    @include smartL {
+        width: 688px;
+    }
+
+    @include smartM {
+        width: 343px;
+    }
+
+    @include smartS {
+        width: 288px;
+    }
+
+    #show-all {
+        @include laptop {
+            width: 200px;
+            height: 20px;
+            font-style: 14px;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 0px;
+        }
+
+        @include laptop-down {
+            width: 200px;
+            height: 20px;
+            font-style: 14px;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 0px;
+        }
+
+    }
+
+    img {
+        @include tablet {
+            width: 24px;
+            height: 24px;
+        }
+
+        @include tablet-down {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.devices {
+
+    @include laptop {
+        height: 608px;
+        padding: 48px 0 9px;
+    }
+
+    @include tablet {
+        height: 587px;
+        padding: 83px 0 54px;
+    }
+
+    @include smartL {
+        height: 440px;
+        padding: 42px 0 32px;
+    }
+
+    @include smartM {
+        height: 652px;
+        padding: 26px 0 18px;
+    }
+
+    @include smartS {
+        height: 631px;
+        padding: 16px 0 16px;
+    }
+}
+
+.devices-top {
+
+    @include laptop {
+        width: 1280px;
+        margin: 10px 0 0 172px;
+    }
+
+    @include tablet {
+        width: 1109px;
+        height: 340px;
+        margin: 0 0 80px 48px;
+    }
+
+    @include smartL {
+        width: 1109px;
+        height: 262px;
+        margin: 0 0 54px 40px;
+    }
+
+    @include smartM {
+        width: 375px;
+        height: 486px;
+        margin: 0 0 32px 0;
+    }
+
+    @include smartS {
+        width: 320px;
+        height: 472px;
+        margin: 0 0 32px 0;
+    }
+}
+
+.devices-top__left {
+    @include laptop {
+        width: 530px;
+    }
+
+    @include tablet {
+        width: 480px;
+    }
+
+    @include smartL {
+        width: 410px;
+    }
+
+    @include smartM {
+        flex-direction: column;
+        align-items: center;
+        width: 343px;
+        margin-left: 16px;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        align-items: center;
+        width: 288px;
+        margin-left: 16px;
+    }
+
+    h2 {
+        @include laptop {
+            font-size: $h2_lap;
+            margin-bottom: 16px;
+        }
+
+        @include tablet {
+            font-size: $h2_tab;
+            margin-bottom: 24px;
+        }
+
+        @include tablet-down {
+            margin-bottom: 24px;
+        }
+
+        @include smartL {
+            font-size: $h2_l;
+        }
+
+        @include smartM {
+            font-size: $h2_m;
+            margin-bottom: 18px;
+        }
+
+        @include smartS {
+            font-size: $h2_s;
+            margin-bottom: 16px;
+        }
+    }
+
+    p {
+
+        @include laptop {
+            font-size: $par2_lap;
+            margin-bottom: 48px;
+        }
+
+        @include laptop-down {
+            font-size: $par2_lap;
+        }
+
+        @include tablet {
+
+            margin-bottom: 40px;
+        }
+
+        @include smartL {
+            margin-bottom: 32px;
+        }
+
+        @include smartM {
+            margin-bottom: 13px;
+        }
+
+        @include smartS {
+            margin-bottom: 5px;
+        }
+    }
+
+    a {
+
+        @include laptop {
+            font-size: $par1_l;
+            width: 411px;
+            height: 60px;
+        }
+
+        @include tablet {
+            font-size: $par1_tab;
+            width: 368px;
+            height: 56px;
+        }
+
+        @include smartL {
+            font-size: $par1_l;
+            width: 340px;
+            height: 56px;
+        }
+
+        @include smartM {
+            font-size: $par1_m;
+            width: 340px;
+            height: 56px;
+        }
+
+        @include smartS {
+            font-size: $par1_s;
+            width: 288px;
+            height: 52px;
+        }
+    }
+}
+
+.devices-top__left-img {
+    img {
+        @include img-position;
+    }
+
+    @include smartM {
+        display: block;
+        width: 375px;
+        height: 204px;
+        margin-bottom: 27px;
+        position: relative;
+    }
+
+    @include smartS {
+        display: block;
+        width: 304px;
+        height: 183px;
+        margin-bottom: 27px;
+        position: relative;
+    }
+
+
+}
+
+.devices-top__right {
+    @include laptop {
+        width: 590px;
+        height: 355px;
+    }
+
+    @include tablet {
+        width: 590px;
+        height: 355px;
+    }
+
+    @include smartL {
+        width: auto;
+        height: 330px;
+        right: 10px;
+
+    }
+
+    @include smartM {
+        display: none;
+    }
+
+    @include smartS {
+        display: none;
+    }
+
+    img {
+        @include smartL {
+            width: inherit;
+        }
+    }
+
+}
+
+.devices-logos {
+    @include laptop {
+        width: 1280px;
+        padding: 0 48px;
+        margin-left: 172px;
+    }
+
+    @include tablet {
+        width: 894px;
+        padding: 0 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        padding: 0 40px;
+    }
+
+    @include smartM {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 343px;
+        padding: 0 16;
+    }
+
+    @include smartS {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 288px;
+        padding: 0 16px;
+    }
+
+
+    img {
+
+        @include laptop {
+            height: 34px;
+        }
+
+        @include tablet {
+            height: 30px;
+        }
+
+        @include smartL {
+            height: 26px;
+        }
+
+        @include smartM {
+            height: 24px;
+            margin-bottom: 24px;
+
+            &:first-child {
+                order: 1;
+            }
+
+            &:last-child {
+                order: -1;
+            }
+        }
+
+        @include smartS {
+            height: 18px;
+            margin-bottom: 24px;
+
+            &:first-child {
+                order: 1;
+            }
+
+            &:last-child {
+                order: -1;
+            }
+        }
+
+    }
+}
+
+.third-background {
+    @include laptop {
+        height: 938px;
+    }
+
+    @include tablet {
+        height: 901px;
+    }
+
+    @include smartL {
+        height: 801px;
+    }
+
+    @include smartM {
+        height: 1273px;
+    }
+
+    @include smartS {
+        height: 1302px;
+    }
+}
+
+img.third-background__img {
+    @include laptop {
+        width: 1440px;
+        height: 505px;
+        top: 450px;
+    }
+
+    @include tablet {
+        width: 990px;
+        height: 376px;
+        top: 530px;
+    }
+
+    @include smartL {
+        width: 766px;
+        height: 301px;
+    }
+
+    @include smartM {
+        display: none;
+    }
+
+    @include smartS {
+        display: none;
+    }
+
+}
+
+img.third-background__img-mob {
+
+    @include smartM {
+        display: block;
+        width: 375px;
+        height: 592px;
+        position: absolute;
+        left: 0;
+        top: 690px;
+        z-index: 50;
+    }
+
+    @include smartS {
+        display: block;
+        width: 320px;
+        height: 545px;
+        position: absolute;
+        left: 0;
+        top: 545px;
+        z-index: 50;
+
+    }
+}
+
+.faq {
+    @include laptop {
+        width: 1096px;
+        height: 440px;
+        padding-top: 48px;
+        margin-bottom: 64px;
+        margin-left: 172px;
+    }
+
+    @include tablet {
+        width: 990px;
+        height: 426px;
+        padding-top: 57px;
+        margin: 0 48px 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        height: 308px;
+        padding-top: 40px;
+        margin: 0 40px 40px;
+    }
+
+    @include smartM {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 655px;
+        padding-top: 32px;
+        margin: 0 16px 64px;
+    }
+
+
+    @include smartS {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 650px;
+        padding-top: 16px;
+        margin: 0 16px 48px;
+    }
+
+    h2 {
+        @include laptop {
+            font-size: $h2_lap;
+            margin-bottom: 48px;
+        }
+
+        @include tablet {
+            font-size: $h2_tab;
+            margin-bottom: 27px;
+        }
+
+        @include smartL {
+            font-size: $h2_l;
+            margin-bottom: 24px;
+        }
+
+        @include smartM {
+            font-size: $h2_m;
+            margin-bottom: 32px;
+        }
+
+        @include smartS {
+            font-size: $h2_s;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.faq-items__row {
+    display: flex;
+
+    @include smartM {
+        flex-direction: column;
+    }
+
+    @include smartS {
+        flex-direction: column;
+    }
+}
+
+.faq-item {
+
+    @include laptop {
+        width: 468px;
+        margin-bottom: 24px;
+    }
+
+    @include tablet {
+        width: 427px;
+        margin-bottom: 27px;
+    }
+
+    @include smartL {
+        width: 332px;
+        margin-bottom: 20px;
+    }
+
+    @include smartM {
+        width: 343px;
+        margin-bottom: 20px;
+    }
+
+    @include smartS {
+        width: 288px;
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(odd) {
+        @include laptop {
+            margin-right: 170px;
+        }
+
+        @include tablet {
+            margin-right: 32px;
+        }
+
+        @include smartL {
+            margin-right: 24px;
+        }
+
+        @include smartM {
+            margin-right: 0;
+        }
+
+        @include smartS {
+            margin-right: 0;
+        }
+    }
+}
+
+.faq-answer {
+    @include laptop {
+        font-size: $par2_lap;
+        width: 394px;
+    }
+
+    @include laptop-down {
+        font-size: $par2_lap;
+    }
+
+    @include tablet {
+        width: 353px;
+    }
+
+    @include smartL {
+        width: 258px;
+    }
+
+    @include smartM {
+        width: 368px;
+    }
+
+    @include smartS {
+        width: 288px;
+    }
+}
+
+.faq-item__top {
+    h5 {
+
+        @include laptop {
+            font-size: $h5_lap;
+            font-weight: $fw400;
+            width: 394px;
+            height: 50px;
+        }
+
+        @include laptop-down {
+            font-weight: $fw400;
+            line-height: $lh140;
+        }
+
+        @include tablet {
+            font-size: $h5_tab;
+            width: 353px;
+            height: 50px;
+        }
+
+        @include tablet-down {
+            font-size: $h5_tab;
+        }
+
+        @include smartL {
+            width: 258px;
+            height: auto;
+        }
+
+        @include smartM {
+            width: 269px;
+            height: auto;
+        }
+
+        @include smartS {
+            width: 228px;
+            height: auto;
+        }
+    }
+
+    img {
+        @include laptop {
+            width: 24px;
+            height: 24px;
+        }
+
+        @include laptop-down {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.site-footer {
+    @include laptop {
+        height: 427px;
+    }
+
+    @include tablet {
+        height: 427px;
+    }
+
+    @include smartL {
+        height: 413px;
+        padding-top: 64px;
+    }
+
+    @include smartM {
+        height: 592px;
+    }
+
+    @include smartS {
+        height: 652px;
+    }
+}
+
+.footer-top {
+    @include laptop {
+        width: 1096px;
+        margin-left: 172px;
+    }
+
+    @include tablet {
+        width: 862px;
+        margin-left: 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        margin: 0 0 35px 40px;
+    }
+
+    @include smartM {
+        flex-direction: column;
+        width: 375px;
+        margin: 0 0 32px 0;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        width: 320px;
+        margin: 0 0 32px 0;
+    }
+}
+
+.footer-top__left {
+    @include laptop {}
+
+    @include tablet {}
+
+    @include smartL {}
+
+    @include smartM {
+        margin: 0 0 30px 16px;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-links {
+    @include laptop {
+        width: 156px;
+    }
+
+    @include laptop-down {
+        width: 156px;
+    }
+
+    @include smartS {
+        width: 219px;
+    }
+
+    a {
+        @include laptop {
+            font-size: $links_f_lap;
+        }
+
+        @include laptop-down {
+            font-size: $links_f_lap;
+        }
+    }
+
+    &:first-child {
+        @include laptop {
+            margin-right: 110px;
+        }
+
+        @include tablet {
+            margin-right: 110px;
+        }
+
+        @include smartL {
+            margin-right: 22px;
+        }
+
+        @include smartM {
+            margin-right: 31px;
+        }
+
+        @include smartS {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer-top__right {
+    @include laptop {
+        width: 176px;
+    }
+
+    @include laptop-down {
+        width: 176px;
+    }
+
+
+    @include smartM {
+        flex-direction: row;
+        width: auto;
+        margin-left: 16px;
+    }
+
+    @include smartS {
+        flex-direction: column;
+        margin-left: 16px;
+    }
+
+    h5 {
+
+        @include laptop {
+            font-size: $h5_lap;
+        }
+
+        @include tablet {
+            font-size: $h5_tab;
+        }
+
+        @include tablet-down {
+            font-size: $h5_tab;
+        }
+
+    }
+
+    a {
+        @include laptop {
+            font-size: $links_f_lap;
+        }
+
+        @include laptop-down {
+            font-size: $links_f_lap;
+        }
+    }
+
+    span {
+        @include laptop {
+            font-size: $links_f_lap;
+            margin-top: 32px;
+        }
+
+        @include laptop-down {
+            font-size: $links_f_lap;
+            margin-top: 32px;
+        }
+
+        @include smartM {
+            margin-top: 0;
+        }
+
+        @include smartS {
+            margin-top: 16px;
+        }
+    }
+}
+
+.footer-top__right1 {
+    @include smartM {
+        margin-right: 61px;
+    }
+}
+
+.footer-socials {
+    a {
+        @include laptop {
+            width: 32px;
+            height: 32px;
+        }
+
+        &:first-child {
+            @include laptop {
+                margin-right: 16px;
+            }
+        }
+
+        @include laptop-down {
+            width: 32px;
+            height: 32px;
+        }
+
+        &:first-child {
+            @include laptop-down {
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    @include laptop {
+        width: 1096px;
+        margin-left: 172px;
+    }
+
+    @include tablet {
+        width: 862px;
+        margin-left: 48px;
+    }
+
+    @include smartL {
+        width: 688px;
+        margin-left: 40px;
+    }
+
+    @include smartM {}
+
+    @include smartS {}
+
+}
+
+.footer_payment-methods {
+    @include laptop {
+        margin-bottom: 24px;
+    }
+
+    @include laptop-down {
+        margin-bottom: 24px;
+    }
+
+    @include tablet {
+        margin-bottom: 24px;
+    }
+
+    @include smartS {}
+
+    @include smartM {
+        flex-wrap: wrap;
+    }
+
+    img {
+        @include laptop {
+            height: 32px;
+            margin-right: 16px;
+        }
+
+        @include laptop-down {
+            height: 32px;
+            margin-right: 16px;
+        }
+
+    }
+}
+
+.footer-copyright {
+    @include smartM {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+.footer-copyright__company::after {
+    @include smartM {
+        display: none;
+    }
+
+    span {
+        @include laptop {
+            font-size: 11px;
+        }
+
+        @include laptop-down {
+            font-size: 11px;
+        }
+    }
+}

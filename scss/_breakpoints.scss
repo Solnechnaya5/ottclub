@@ -1,0 +1,97 @@
+
+$breakpoints:(
+    desktop: 1920px,
+    laptop: 1440px,
+    tablet: 990px,
+    smartL: 768px,
+    smartM: 375px,
+    smartS: 320px,
+);
+
+@mixin desktop-up{
+    @media (min-width:map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin laptop-up{
+    @media (min-width:map-get($breakpoints, laptop)){
+        @content;
+    }
+}
+@mixin tablet-up{
+    @media (min-width:map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin smartL-up{
+    @media (min-width:map-get($breakpoints, smartL)){
+        @content;
+    }
+}
+@mixin smartM-up{
+    @media (min-width:map-get($breakpoints, smartM)){
+        @content;
+    }
+}
+@mixin smartS-up{
+    @media (min-width:map-get($breakpoints, smartS)){
+        @content;
+    }
+}
+// 
+@mixin smartS{
+    @media (max-width:map-get($breakpoints, smartM) - .2px) and (min-width: map-get($breakpoints, smartS)){
+        @content;
+    }
+}
+@mixin smartM{
+    @media (max-width:map-get($breakpoints, smartL) - .2px) and (min-width: map-get($breakpoints, smartM)){
+        @content;
+    }
+}
+@mixin smartL{
+    @media (max-width:map-get($breakpoints, tablet) - .2px) and (min-width: map-get($breakpoints, smartL)){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width:map-get($breakpoints, laptop) - .2px) and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin laptop{
+    @media (max-width:map-get($breakpoints, desktop) - .2px) and (min-width: map-get($breakpoints, laptop)){
+        @content;
+    }
+}
+// mobile first
+@mixin desktop-down{
+    @media (max-width:map-get($breakpoints, desktop) - .2px){
+        @content;
+    }
+}
+@mixin laptop-down{
+    @media (max-width:map-get($breakpoints, laptop)){
+        @content;
+    }
+}
+
+@mixin tablet-down{
+    @media (max-width:map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin smartL-down{
+    @media (max-width:map-get($breakpoints, smartL) - .2px){
+        @content;
+    }
+}
+@mixin smartM-down{
+    @media (max-width:map-get($breakpoints, smartM)){
+        @content;
+    }
+}@mixin smartS-down{
+    @media (max-width:map-get($breakpoints, smartS)){
+        @content;
+    }
+}
