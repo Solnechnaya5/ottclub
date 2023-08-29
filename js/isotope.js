@@ -15,7 +15,7 @@ function removeActiveClass() {
       click.preventDefault();
       
       let filterData = event.target.getAttribute('data-filter');
-      buttonGroup.querySelector('.is-active').classList.remove('is-active');
+     document.querySelector('.is-active').classList.remove('is-active');
     event.target.classList.add('is-active');
     
       filterData = filterData.replace(/\s+/g, '');
